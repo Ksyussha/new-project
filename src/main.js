@@ -2,10 +2,10 @@ import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import urql from '@urql/vue';
 
-import Root from './App.vue'
+import App from './App.vue'
 import router from './router'
 
-const app = createApp(Root)
+const app = createApp(App)
 
 app.use(createPinia())
 app.use(router)
@@ -14,3 +14,4 @@ app.use(urql, {
 });
 
 app.mount('#app')
+
