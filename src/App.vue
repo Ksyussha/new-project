@@ -34,9 +34,8 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 .menu{ 
-    background-color: #f6f6f6;;
-    height: 0px;
-    padding-top: 25px;
+    background-color: #f6f6f6;
+    height: 68px;
     display: flex;
     align-items: center;
     justify-content: space-around;

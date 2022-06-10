@@ -18,7 +18,11 @@
           <div class="flex">
             
             <div v-for="p in data.products" :key="p.id" @click="move(p.id)" class="product_card">
-            <button @click="addFav(p.id)"> ♡ </button>
+            <div class="fl">
+              <div>
+            <a href=""> ♡ </a>
+            </div>
+            </div>
               <img :src="
                 'http://38.242.229.113:8055/assets/' +
                 p.image.id +
@@ -137,6 +141,9 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border: 1px solid black;
+    border-right-style: none;
+    border-left-style: none;
 }
 
 .h1 {
@@ -144,7 +151,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 35px;
+  margin-top: 0px;
 
 }
 
@@ -179,7 +186,19 @@ h1 {
   transform: scale(1.1);
   cursor: pointer;
 }
-
+.product_card a{ 
+  text-decoration: none;
+      color: black;
+      font-size: 30px;
+}
+.product_card a:hover{ 
+  text-decoration: none;
+      color: black;
+      font-weight: bold;
+}
+.fl{
+      margin-left: 176px;
+}
 .flex {
   display: flex;
   flex-wrap: wrap;
@@ -187,12 +206,13 @@ h1 {
 }
 
 input {
-  margin: 20px 0px 0px 0px;
+  margin: 36px 0px 0px 0px;
   height: 24px;
   width: 249px;
-  margin-right: 19px;
+  margin-right: 88px;
   border-color: black;
   border-radius: 7px;
+  border: 1px solid;
 }
 
 .flx {
